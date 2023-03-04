@@ -9,13 +9,18 @@ import EliminarFormulario from './Components/EliminarForm';
 import Borrador from './Components/Borradores';
 import Crear from './Components/Crear';
 import Alumno from './Components/Alumno';
+import './css/style.css'
 
 
 function App() {
   return (
 
+
+        
+
+
     <Routes>
-     <Route path="/" element={<Login />} />
+     <Route exact path="/" element={<Login />} />
      <Route path="/BasePag" element={<BasePag />} />
      <Route path="/FormulariosFi" element={<Formulariosfinalizados />} />
      <Route path="/VisualizarR" element={<VisualizarRespuestas />} />
@@ -26,6 +31,8 @@ function App() {
      <Route path="/alumno" element={<Alumno />} />
     </Routes>
 
+
+  
   );
 }
 export default App;
